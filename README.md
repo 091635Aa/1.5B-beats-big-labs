@@ -197,7 +197,7 @@ python 测试/基准脚本/run_llm_judge.py --模式 全部 --λ 0.08 --身份 o
 
 - Google：BIG-bench 很好，就是没测出"人味" → https://github.com/google/BIG-bench
 - 麻省理工：你们 636 个真人的 TuringTest 我拜读了 → https://github.com/kreimanlab/TuringTest
-- TuringBench：感谢你们的大规模图灵测试基准（虽然英文数据集跟我们中文架构水土不服，我们自建了中文检测器）→ https://turingbench.ist.psu.edu/
+- TuringBench：感谢你们提供的大规模图灵测试基准 → https://github.com/AdaUchendu/TuringBench
 
 **@openai @google @google-deepmind @anthropics @facebookresearch @meta-llama @xai**
 

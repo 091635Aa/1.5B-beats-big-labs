@@ -1,10 +1,12 @@
-# 🏆 A 1.5B Model Beats the Big Labs — With My New Architecture
+# 🏆 A 1.5B Model Beats the Big Labs on Emotional Expression — With My New Architecture
 
 > **Silicon Valley engineers: git gud. OpenAI: git gud. Closed-source giants: git gud.**
 
 > 🔗 **Live interactive demo** (browser-ready: click cards, switch real conversations): https://091635Aa.github.io/1.5B-beats-big-labs/
 
-A tiny **1.5B** model (Qwen2.5-1.5B-Instruct) wrapped in the **Semantic Echo** inference architecture crushes its own bare checkpoint on **5 Turing-test benchmarks** — human-likeness score **2~3x higher**. A fraction of a fraction of the parameters of the big labs. No fine-tuning, no retraining, no A100 farm. Just recycling discarded token embeddings at inference time.
+> ⚠️ **Straight talk first**: the win is on the **emotional expression / human-likeness** dimension (4/5 Turing-test benchmarks), not overall capability. A 1.5B model obviously can't out-reason trillion-parameter models. But at "being human"? Git gud.
+
+A tiny **1.5B** model (Qwen2.5-1.5B-Instruct) wrapped in the **Semantic Echo** inference architecture crushes its own bare checkpoint on **5 Turing-test benchmarks** (emotional / human-likeness dimension) — human-likeness score **2~3x higher**. A fraction of a fraction of the parameters of the big labs. No fine-tuning, no retraining, no A100 farm. Just recycling discarded token embeddings at inference time.
 
 **Don't ask. Just git gud.**
 
@@ -65,6 +67,8 @@ Every comparison uses **the same seed (42) and the same prompts** — the only v
 | LLM-as-Judge | 0.6900 | 0.6333 | ⚠️ -0.057 (judge prefers "empathetic-complete" style — an engine-neutral artifact) |
 
 **4 of 5 benchmarks: the 1.5B + echo engine beats its own bare checkpoint. The bare base model gets flattened.**
+
+> Note: all metrics above are on the **emotional expression / human-likeness** dimension (human-likeness, empathy, emotional fidelity, "more human-like" judge votes) — not commonsense, reasoning or coding comparisons.
 
 > Full analysis & per-fix contribution: [测试/实验记录/repair_report.md](测试/实验记录/repair_report.md)
 
@@ -127,21 +131,22 @@ Thanks for proving that **stacking parameters isn't the same as stacking humanit
 
 ### 💰 Commercial License Price List (Pay Before You Copy)
 
-Since you're going to copy it anyway, pay the licensing fee first. Tiered by scale — CNY domestically, USD for overseas at the current exchange rate:
+Since you're going to copy it anyway, pay the licensing fee first. Tiered into **Big / Mid / Small** companies by annual revenue, headcount and scale. License is **one term (one year)**:
 
-| Tier | Annual Fee | Note |
+| Tier | Criteria | Annual Fee |
 |---|---|---|
-| Alibaba Cloud / Tencent Cloud / Huawei Cloud | **¥5,000,000 / yr** | Integrated into cloud platform as foundational service |
-| Top domestic internet companies | **¥2,000,000–5,000,000 / yr** | Self-developed emotional companion products |
-| Small & mid-size domestic companies | **¥100,000–500,000 / yr** | Standalone use cases |
-| Overseas big labs | **$1,000,000–2,000,000 / yr** | Same as above, at current exchange rate |
+| Big company | Annual revenue ≥ ¥10B, or ≥ 10,000 employees | **¥5,000,000** |
+| Mid company | Annual revenue ¥1B–10B | **¥2,000,000–5,000,000** |
+| Small company | Annual revenue < ¥1B | **¥100,000–500,000** |
+
+> Overseas big labs (@the ones above): I can't travel abroad and can hardly get an internship, so no licensing for you.
+> One-term (one-year) license only. No long-term bulk licensing.
 
 **Discounts** (eligibility based):
 
 - 🎓 Hire me for an internship at **Alibaba Cloud / Tencent Cloud / ByteDance / Huawei Cloud** → drop to **¥3,000,000 / yr** (¥2,000,000 off)
-- 🏢 Top domestic internet companies → **¥1,000,000 off**
-- 🏬 Small & mid-size domestic companies → **¥100,000 off**
-- 🌍 Overseas big labs (converted at exchange rate) → **¥1,000,000 off**
+- 🏢 Mid companies → **¥1,000,000 off**
+- 🏬 Small companies → **¥100,000 off**
 
 > Don't ask if we can negotiate. Git gud. Pay first.
 

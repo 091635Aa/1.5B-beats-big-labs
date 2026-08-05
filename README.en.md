@@ -125,6 +125,26 @@ Thanks for proving that **stacking parameters isn't the same as stacking humanit
 > A 1.5B model can do this. Your trillion-parameter models can't?
 > Git gud. Or just copy this architecture home.
 
+### 💰 Commercial License Price List (Pay Before You Copy)
+
+Since you're going to copy it anyway, pay the licensing fee first. Tiered by scale — CNY domestically, USD for overseas at the current exchange rate:
+
+| Tier | Annual Fee | Note |
+|---|---|---|
+| Alibaba Cloud / Tencent Cloud / Huawei Cloud | **¥5,000,000 / yr** | Integrated into cloud platform as foundational service |
+| Top domestic internet companies | **¥2,000,000–5,000,000 / yr** | Self-developed emotional companion products |
+| Small & mid-size domestic companies | **¥100,000–500,000 / yr** | Standalone use cases |
+| Overseas big labs | **$1,000,000–2,000,000 / yr** | Same as above, at current exchange rate |
+
+**Discounts** (eligibility based):
+
+- 🎓 Hire me for an internship at **Alibaba Cloud / Tencent Cloud / ByteDance / Huawei Cloud** → drop to **¥3,000,000 / yr** (¥2,000,000 off)
+- 🏢 Top domestic internet companies → **¥1,000,000 off**
+- 🏬 Small & mid-size domestic companies → **¥100,000 off**
+- 🌍 Overseas big labs (converted at exchange rate) → **¥1,000,000 off**
+
+> Don't ask if we can negotiate. Git gud. Pay first.
+
 ---
 
 ## License

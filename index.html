@@ -111,6 +111,12 @@
   .roast p{color:var(--dim);max-width:640px;margin:0 auto 18px}
   .ats{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
   .at{font-size:.9rem;color:var(--txt);background:var(--card2);padding:8px 16px;border-radius:999px;border:1px solid var(--line)}
+  .price{margin:26px auto 0;max-width:760px;border-collapse:collapse;font-size:.84rem}
+  .price th,.price td{padding:10px 14px;border:1px solid var(--line);text-align:left}
+  .price th{color:var(--dim);font-weight:600;background:var(--card2)}
+  .price b{color:var(--gold);white-space:nowrap}
+  .price .disc{color:var(--win);font-size:.78rem;margin-top:12px}
+  .price .disc b{color:var(--win)}
   footer{padding:36px 6vw 60px;text-align:center;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line)}
   footer b{color:var(--txt)}
 </style>
@@ -212,6 +218,15 @@
       <div class="ats">
         <span class="at">@openai</span><span class="at">@google</span><span class="at">@google-deepmind</span><span class="at">@anthropics</span><span class="at">@facebookresearch</span><span class="at">@meta-llama</span><span class="at">@xai</span>
       </div>
+      <table class="price">
+        <tr><th>使用规模</th><th>授权费 / 年</th><th>说明</th></tr>
+        <tr><td>阿里云 / 腾讯云 / 华为云</td><td><b>500 万元</b></td><td>集成到云平台作为基础服务</td></tr>
+        <tr><td>国内头部互联网公司</td><td><b>200–500 万元</b></td><td>用于自研情感陪伴产品</td></tr>
+        <tr><td>国内中小型公司</td><td><b>10–50 万元</b></td><td>独立应用场景</td></tr>
+        <tr><td>海外大厂</td><td><b>100–200 万美元</b></td><td>汇率按当期结算</td></tr>
+      </table>
+      <div class="price disc">优惠：录用我进 阿里/腾讯/字节/华为 实习 → <b>300 万/年</b>（-200万）· 头部互联网 <b>-100万</b> · 中小型 <b>-10万</b> · 海外大厂 <b>-100万人民币</b></div>
+      <p style="margin-top:14px;color:var(--dim)">别问能不能谈，问就是：菜，就多练。练不了，就把费付了。</p>
     </div>
   </div>
 </section>

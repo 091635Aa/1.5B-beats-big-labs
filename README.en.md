@@ -126,7 +126,7 @@ Thanks for proving that **stacking parameters isn't the same as stacking humanit
 
 - Google: BIG-bench is nice, but it never measured "human flavor" → https://github.com/google/BIG-bench
 - MIT: we read your 636-human TuringTest → https://github.com/kreimanlab/TuringTest
-- TuringBench: thanks for the huge benchmark (though your English dataset clashed with our Chinese architecture, so we built our own Chinese detector) → https://turingbench.ist.psu.edu/
+- TuringBench: thanks for the huge benchmark → https://github.com/AdaUchendu/TuringBench
 
 **@openai @google @google-deepmind @anthropics @facebookresearch @meta-llama @xai**
 

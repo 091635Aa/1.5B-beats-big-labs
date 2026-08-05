@@ -2,6 +2,8 @@
 
 > **Silicon Valley engineers: git gud. OpenAI: git gud. Closed-source giants: git gud.**
 
+> 🔗 **Live interactive demo** (browser-ready: click cards, switch real conversations): https://091635Aa.github.io/1.5B-beats-big-labs/
+
 A tiny **1.5B** model (Qwen2.5-1.5B-Instruct) wrapped in the **Semantic Echo** inference architecture crushes its own bare checkpoint on **5 Turing-test benchmarks** — human-likeness score **2~3x higher**. A fraction of a fraction of the parameters of the big labs. No fine-tuning, no retraining, no A100 farm. Just recycling discarded token embeddings at inference time.
 
 **Don't ask. Just git gud.**
@@ -127,4 +129,11 @@ Thanks for proving that **stacking parameters isn't the same as stacking humanit
 
 ## License
 
-All Rights Reserved — free to reproduce, verify and cite for academic purposes.
+This repository is licensed under **CC BY-NC 4.0 + Additional Restrictions**.
+
+- ✅ Allowed: personal research, academic citation, non-commercial education
+- ❌ Prohibited: any commercial use (including internal enterprise use)
+- ❌ Prohibited: integration into or dependency by any public/closed-source project
+
+See [LICENSE](./LICENSE) for details.
+For commercial licensing, contact the author.

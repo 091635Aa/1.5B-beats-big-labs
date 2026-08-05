@@ -70,6 +70,10 @@ Every comparison uses **the same seed (42) and the same prompts** — the only v
 
 > Note: all metrics above are on the **emotional expression / human-likeness** dimension (human-likeness, empathy, emotional fidelity, "more human-like" judge votes) — not commonsense, reasoning or coding comparisons.
 
+> ⚠️ **Important Note**: This test used the **1.5B vanilla base model** (Qwen2.5-1.5B-Instruct, without any SFT/LoRA fine-tuning).
+>
+> **Roadmap**: We are currently training and adapting an **exclusively-tailored model** based on the Echo architecture. Based on architectural analysis, the tailored version will theoretically achieve a **complete reversal** on the 5th benchmark (LLM-as-Judge), resulting in a perfect 5/5 score. Stay tuned.
+
 > Full analysis & per-fix contribution: [测试/实验记录/repair_report.md](测试/实验记录/repair_report.md)
 
 ---

@@ -89,16 +89,51 @@
   .dlg.bad .a{border-color:var(--lose);color:var(--lose)}
   .dlg .who{font-size:.72rem;color:var(--dim);margin-bottom:8px;text-transform:uppercase;letter-spacing:1px}
   /* ── 架构 ── */
-  .arch{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;justify-content:center}
-  .node{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;text-align:center;min-width:170px;position:relative}
-  .node b{display:block;font-size:.95rem;margin-bottom:4px}
-  .node span{font-size:.78rem;color:var(--dim)}
-  .node.hl{border-color:var(--echo);box-shadow:0 0 24px rgba(79,209,255,.15)}
-  .arrow{display:flex;align-items:center;padding:0 10px;color:var(--echo);font-size:1.3rem}
   .params{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:26px}
   .pchip{border:1px solid var(--line);border-radius:10px;padding:10px 18px;background:var(--card);text-align:center}
   .pchip b{color:var(--echo);font-size:1.2rem;display:block}
   .pchip span{color:var(--dim);font-size:.78rem}
+  /* ── 四层全架构（交互） ── */
+  .layers{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+  .layer{display:flex;gap:16px;align-items:stretch;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:.25s;position:relative}
+  .layer:hover{border-color:var(--echo)}
+  .layer .badge-no{flex:0 0 52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.05rem;color:#04121a}
+  .layer .badge-no.l1{background:var(--naked)}
+  .layer .badge-no.l2{background:var(--echo)}
+  .layer .badge-no.l3{background:var(--gold)}
+  .layer .badge-no.l4{background:#9d7bff}
+  .layer .body{flex:1}
+  .layer .body h4{margin:0;font-size:1.02rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .layer .body h4 .mem{font-size:.7rem;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:2px 10px}
+  .layer .body .imp{color:var(--dim);font-size:.84rem;margin-top:6px;line-height:1.6}
+  .layer .body .status{font-size:.78rem;color:var(--win);margin-top:8px}
+  .layer.off{opacity:.38;filter:grayscale(.6)}
+  .layer .sw{position:absolute;top:18px;right:18px;width:46px;height:26px;background:var(--bg2);border:1px solid var(--line);border-radius:999px;cursor:pointer;transition:.2s}
+  .layer .sw::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:var(--dim);transition:.2s}
+  .layer.on .sw{background:rgba(79,209,255,.35);border-color:var(--echo)}
+  .layer.on .sw::after{left:23px;background:var(--echo)}
+  .layer .swtip{position:absolute;right:76px;top:22px;font-size:.72rem;color:var(--dim)}
+  .subarch{margin-top:22px;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;font-size:.84rem}
+  .subarch .sn{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 14px;text-align:center;color:var(--txt)}
+  .subarch .sn b{display:block;color:var(--echo);font-size:.9rem}
+  .subarch .sn span{font-size:.68rem;color:var(--dim)}
+  .subarch .ar{color:var(--echo)}
+  .legend{display:flex;gap:18px;justify-content:center;margin-top:14px;font-size:.8rem;color:var(--dim);flex-wrap:wrap}
+  .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px}
+  /* ── 微调框架 ── */
+  .tunegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:8px}
+  .tunecard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .tunecard h4{font-size:.95rem;color:var(--echo);margin-bottom:10px}
+  .tunecard .kv{display:flex;justify-content:space-between;font-size:.84rem;padding:5px 0;border-bottom:1px dashed var(--line)}
+  .tunecard .kv:last-child{border-bottom:none}
+  .tunecard .kv b{color:var(--txt)}
+  .tunecard .kv.win b{color:var(--win)}
+  /* ── 最优配置表 ── */
+  table.conf{width:100%;border-collapse:collapse;margin-top:6px;font-size:.88rem}
+  table.conf th,table.conf td{padding:9px 12px;border:1px solid var(--line);text-align:left}
+  table.conf th{color:var(--gold);background:var(--card2);font-weight:600}
+  table.conf td b{color:var(--echo)}
+  .conf-note{margin-top:14px;font-size:.8rem;color:var(--dim)}
   /* ── 复现 ── */
   .cmd{background:#0d1117;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
   .cmd code{flex:1;color:#7ee787;font-family:Consolas,monospace;font-size:.86rem;overflow-x:auto;white-space:nowrap}
@@ -128,7 +163,9 @@
   <div class="spacer"></div>
   <a class="menu" href="#bench">测试结果</a>
   <a class="menu" href="#demo">真实对话</a>
-  <a class="menu" href="#arch">架构</a>
+  <a class="menu" href="#arch">四层架构</a>
+  <a class="menu" href="#config">最优配置</a>
+  <a class="menu" href="#tune">微调框架</a>
   <a class="menu" href="#run">复现</a>
   <a class="menu" href="#roast">嘲讽区</a>
 </nav>
@@ -157,7 +194,7 @@
     <p class="lead">同种子（42）、同提示词，唯一变量 = 是否挂载语义回响引擎。点击卡片展开子维度明细。</p>
     <div class="benchgrid" id="grid"></div>
     <p class="hint">▾ 点击卡片查看每个基准的子维度得分与判定说明</p>
-    <p style="margin-top:14px;font-size:.88rem;color:var(--gold)">⚠️ 本次使用 1.5B 原版基座模型（未做 SFT/LoRA 特调）。正在训练**专属定制模型**，理论上第 5 项（LLM-Judge）将实现全面反超，达成 5/5 全绿。</p>
+    <p style="margin-top:14px;font-size:.88rem;color:var(--gold)">⚠️ 本次使用 1.5B 原版基座模型（未做 SFT/LoRA 特调）。正在训练<b>专属定制模型</b>，理论上第 5 项（LLM-Judge）将实现全面反超，达成 5/5 全绿。</p>
   </div>
 </section>
 
@@ -176,31 +213,149 @@
 
 <section id="arch">
   <div class="wrap">
-    <h2><span class="idx">03</span>语义回响 · 架构示意</h2>
-    <p class="lead">不修改权重、不重新训练——只把大模型推理时「被丢弃的 Token 嵌入」回收利用。</p>
-    <div class="arch">
-      <div class="node"><b>输入</b><span>自然语言</span></div>
-      <div class="arrow">→</div>
-      <div class="node"><b>模型逐层前向</b><span>Qwen2.5-1.5B</span></div>
-      <div class="arrow">→</div>
-      <div class="node hl"><b>回响池</b><span>捕获 hidden_state<br>衰减 + 滑动窗口</span></div>
-      <div class="arrow">→</div>
-      <div class="node"><b>随机投影</b><span>对 logits 施加<br>情感偏置</span></div>
-      <div class="arrow">→</div>
-      <div class="node"><b>持续回响</b><span>更细腻 · 更像人</span></div>
+    <h2><span class="idx">03</span>四层一体化架构 · 全层交互展示</h2>
+    <p class="lead">点击每一层的开关，点亮/熄灭该层，观察四层如何协同。本次图灵测试实证仅启用 L2（纯回响引擎 + 动态策略 B），L3/L4 为架构完整形态。</p>
+    <div class="layers" id="layers">
+      <div class="layer on" data-l="1">
+        <div class="badge-no l1">L1</div>
+        <div class="body">
+          <h4>微调基座 <span class="mem">推理底座</span></h4>
+          <div class="imp">唯一物理基座：Qwen2.5-1.5B-Instruct（fp16 / 4bit NF4）。权重不变，一切增强都在推理期旁路完成。</div>
+          <div class="status">● 状态：开启（本次实证使用 1.5B 原版基座，未做 SFT/LoRA 特调）</div>
+        </div>
+        <div class="swtip">默认开</div><div class="sw"></div>
+      </div>
+      <div class="layer on" data-l="2">
+        <div class="badge-no l2">L2</div>
+        <div class="body">
+          <h4>语义回响 Echo <span class="mem">短期记忆</span></h4>
+          <div class="imp">在模型最后 4 层注册 forward hook，回收被丢弃的 hidden_state 存入回响池（指数衰减 + 情感词库筛选），经固定随机投影矩阵（种子 42）映射为 logits 偏置注入。跨轮持久池维护多轮情绪基调。</div>
+          <div class="status">● 状态：开启（λ=0.08 · 动态策略 B · 本次实证唯一启用层）</div>
+        </div>
+        <div class="swtip">默认开</div><div class="sw"></div>
+      </div>
+      <div class="layer off" data-l="3">
+        <div class="badge-no l3">L3</div>
+        <div class="body">
+          <h4>RAG 向量检索 <span class="mem">中期记忆</span></h4>
+          <div class="imp">bge-small-zh-v1.5 + FAISS（151 条知识库），检索 top-k 以 [参考信息] 前缀注入事实上下文。信噪比验证：中性注入熵 +58%、情感注入 +27.6%，与回响正交共存。</div>
+          <div class="status">○ 状态：关闭（实证为保持对照纯净未启用）</div>
+        </div>
+        <div class="swtip">点击开启</div><div class="sw"></div>
+      </div>
+      <div class="layer off" data-l="4">
+        <div class="badge-no l4">L4</div>
+        <div class="body">
+          <h4>LoRA 语态适配器 <span class="mem">长期记忆</span></h4>
+          <div class="imp">gentle_v2 / emotion_v1 / emotion_7B（r=8, α=16, q/k/v/o_proj），热插拔沉淀人格语态。emotion_v1 训练 loss 0.784、emotion_7B loss 0.758，20 次热加载显存零泄漏。</div>
+          <div class="status">○ 状态：关闭（实证未启用；下一阶段定制版模型将启用 → 冲刺 5/5 全绿）</div>
+        </div>
+        <div class="swtip">点击开启</div><div class="sw"></div>
+      </div>
+    </div>
+    <div class="subarch" id="subarch">
+      <div class="sn"><b>动态策略</b><span>情感密度&gt;0.15<br>→ τ 降至 0.05</span></div>
+      <div class="ar">→</div>
+      <div class="sn"><b>RAG</b><span>FAISS 检索注入</span></div>
+      <div class="ar">→</div>
+      <div class="sn"><b>情感筛选</b><span>τ 阈值包装</span></div>
+      <div class="ar">→</div>
+      <div class="sn"><b>LoRA</b><span>PeftModel 热切换</span></div>
+      <div class="ar">→</div>
+      <div class="sn"><b>回响注入</b><span>λ/γ 自动计算</span></div>
+      <div class="ar">→</div>
+      <div class="sn"><b>基座模型</b><span>1.5B 权重不变</span></div>
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--naked)"></i>L1 基座</span>
+      <span><i style="background:var(--echo)"></i>L2 短期记忆</span>
+      <span><i style="background:var(--gold)"></i>L3 中期记忆</span>
+      <span><i style="background:#9d7bff"></i>L4 长期记忆</span>
     </div>
     <div class="params">
       <div class="pchip"><b>λ = 0.08</b><span>注入强度（0.29 会坍缩成复读机）</span></div>
       <div class="pchip"><b>γ = 0.07</b><span>池衰减</span></div>
       <div class="pchip"><b>τ = 0.09</b><span>情感筛选阈值</span></div>
       <div class="pchip"><b>动态策略 B</b><span>情感密度 &gt; 0.15 时 τ→0.05</span></div>
+      <div class="pchip"><b>λ 归一化</b><span>λ × 896 / hidden_dim 跨尺度</span></div>
+      <div class="pchip"><b>最后 4 层</b><span>多层 hidden_state 平均</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="config">
+  <div class="wrap">
+    <h2><span class="idx">04</span>1.5B 最优配置</h2>
+    <p class="lead">经 λ∈[0.02,0.20] 共 24 组系统扫描 + 跨尺度验证，1.5B 的最优配置如下（扫描表最优）。</p>
+    <table class="conf">
+      <tr><th>参数</th><th>最优值</th><th>说明</th></tr>
+      <tr><td>λ（注入强度）</td><td><b>0.08</b></td><td>情感增强与输出稳定的平衡点；0.29 坍缩成复读机</td></tr>
+      <tr><td>γ（池衰减）</td><td><b>0.07</b></td><td>中等衰减，保留约 50 步内 Token 信息</td></tr>
+      <tr><td>τ（筛选阈值）</td><td><b>0.09</b></td><td>过滤低不确定性 Token，保证回响池质量</td></tr>
+      <tr><td>动态策略</td><td><b>B</b></td><td>情感密度 &gt; 0.15 → τ 降至 0.05、λ 不变</td></tr>
+      <tr><td>思考链 λ</td><td><b>0.08 / 0</b></td><td>思考阶段注入 λ，正文阶段不注入</td></tr>
+      <tr><td>投影种子</td><td><b>42</b></td><td>固定随机投影矩阵，全程可复现</td></tr>
+      <tr><td>采样参数</td><td><b>T=1.0 · top_p=0.9 · top_k=50</b></td><td>与裸模型完全一致，对照纯净</td></tr>
+      <tr><td>重复惩罚</td><td><b>1.05</b></td><td>与裸模型对齐</td></tr>
+      <tr><td>层数捕获</td><td><b>最后 4 层</b></td><td>多层 hidden_state 平均作为语义场</td></tr>
+    </table>
+    <p class="conf-note">💡 为什么是 1.5B？<b>性价比最优</b>（4bit 仅 1.1GB，16GB 单卡可同载 7B 裁判）· <b>λ 敏感度适中</b>（0.08 处于稳定区间）· <b>人味提升最显著</b>（TuringBench 人似度 2 倍，情感保真打平裸 7B）。</p>
+  </div>
+</section>
+
+<section id="tune">
+  <div class="wrap">
+    <h2><span class="idx">05</span>微调框架 · LoRA 智能培训</h2>
+    <p class="lead">面向下一阶段"专属定制模型"的完整 LoRA 微调链路：情感数据集构建 → LoRA 训练 → 热插拔部署 → 验证。</p>
+    <div class="tunegrid">
+      <div class="tunecard">
+        <h4>📚 数据集构建</h4>
+        <div class="kv"><span>high_ei_chat</span><b>170 条</b></div>
+        <div class="kv"><span>multi_emotion</span><b>4159 条</b></div>
+        <div class="kv"><span>gentle_v2</span><b>80 条</b></div>
+        <div class="kv win"><span>合计</span><b>4409 条</b></div>
+        <div class="kv"><span>格式</span><b>{instruction, response}</b></div>
+        <div class="kv"><span>打乱种子</span><b>42</b></div>
+      </div>
+      <div class="tunecard">
+        <h4>🎓 emotion_v1（3B）</h4>
+        <div class="kv"><span>基座</span><b>Qwen2.5-3B fp16</b></div>
+        <div class="kv"><span>LoRA</span><b>r=8 · α=16 · q/k/v/o</b></div>
+        <div class="kv"><span>可训练参数</span><b>0.12%</b></div>
+        <div class="kv"><span>训练</span><b>2 epochs · 518s</b></div>
+        <div class="kv win"><span>最终 loss</span><b>0.784</b></div>
+        <div class="kv"><span>输出</span><b>19.7MB safetensors</b></div>
+      </div>
+      <div class="tunecard">
+        <h4>🎓 emotion_7B（7B）</h4>
+        <div class="kv"><span>基座</span><b>Qwen2.5-7B QLoRA 4bit</b></div>
+        <div class="kv"><span>LoRA</span><b>r=8 · α=16 · q/k/v/o</b></div>
+        <div class="kv"><span>可训练参数</span><b>0.066%</b></div>
+        <div class="kv"><span>训练</span><b>2 epochs · 1044s</b></div>
+        <div class="kv win"><span>最终 loss</span><b>0.758</b></div>
+        <div class="kv"><span>验证重复率</span><b>0.004</b></div>
+      </div>
+      <div class="tunecard">
+        <h4>⚡ 热插拔验证</h4>
+        <div class="kv"><span>热加载/卸载</span><b>20 次显存零泄漏</b></div>
+        <div class="kv"><span>API</span><b>/load_lora · /unload_lora</b></div>
+        <div class="kv"><span>显存</span><b>1.5B=1102MB · 7B=5300MB</b></div>
+        <div class="kv win"><span>组合建议</span><b>外挂+回响 λ 降至 0.06–0.08</b></div>
+      </div>
+    </div>
+    <div class="params">
+      <div class="pchip"><b>4409</b><span>情感训练数据</span></div>
+      <div class="pchip"><b>0.12%</b><span>3B 可训练参数占比</span></div>
+      <div class="pchip"><b>0.784 / 0.758</b><span>训练 loss</span></div>
+      <div class="pchip"><b>0.004</b><span>外挂重复率</span></div>
+      <div class="pchip"><b>5/5</b><span>定制版预期全绿</span></div>
     </div>
   </div>
 </section>
 
 <section id="run">
   <div class="wrap">
-    <h2><span class="idx">04</span>一键复现</h2>
+    <h2><span class="idx">06</span>一键复现</h2>
     <p class="lead">代码、测试流程、完整日志、裁判校准报告全部在仓库里，点击复制。</p>
     <div class="cmd"><code>pip install -r requirements.txt   # transformers / torch / sklearn / jieba</code><button class="copy" data-c="pip install -r requirements.txt">复制</button></div>
     <div class="cmd"><code>python 测试/基准脚本/run_turingbench.py --模式 全部</code><button class="copy" data-c="python 测试/基准脚本/run_turingbench.py --模式 全部">复制</button></div>
@@ -213,7 +368,7 @@
 
 <section id="roast">
   <div class="wrap">
-    <h2><span class="idx">05</span>致（嘲）谢（讽）</h2>
+    <h2><span class="idx">07</span>致（嘲）谢（讽）</h2>
     <div class="roast">
       <h3>感谢各位海外闭源大厂用行动证明：堆参数不一定堆出人味。</h3>
       <p>1.5B 都做到的事，你们千亿参数做不到？<br>菜，就多练。练不了，就把这个架构抄回去。</p>
@@ -345,6 +500,45 @@ document.querySelectorAll(".copy").forEach(b=>{
     setTimeout(()=>{ b.textContent="复制"; b.classList.remove("ok"); },1500);
   });
 });
+
+/* ═══════ 四层交互开关 ═══════ */
+const layerStatus = {
+  1:{on:"● 状态：开启（本次实证使用 1.5B 原版基座，未做 SFT/LoRA 特调）", off:"○ 状态：关闭（没有基座就没有推理，本层不可关闭）"},
+  2:{on:"● 状态：开启（λ=0.08 · 动态策略 B · 本次实证唯一启用层）", off:"○ 状态：关闭（失去情感回响，回到裸模型输出）"},
+  3:{on:"● 状态：开启（RAG 注入 [参考信息] 事实上下文，熵 +58%）", off:"○ 状态：关闭（实证为保持对照纯净未启用）"},
+  4:{on:"● 状态：开启（LoRA 语态适配器已挂载，长期人格生效）", off:"○ 状态：关闭（实证未启用；下一阶段定制版将启用 → 冲刺 5/5 全绿）"}
+};
+document.querySelectorAll(".layer").forEach(layer=>{
+  const n = +layer.dataset.l;
+  layer.querySelector(".sw").addEventListener("click", ()=>{
+    if(n===1){ return; } // L1 不可关闭
+    layer.classList.toggle("on");
+    layer.classList.toggle("off");
+    const st = layer.querySelector(".status");
+    if(st) st.innerHTML = layer.classList.contains("on") ? layerStatus[n].on : layerStatus[n].off;
+    const tip = layer.querySelector(".swtip");
+    if(tip) tip.textContent = layer.classList.contains("on") ? "默认开" : "点击开启";
+    // 动态更新 L4 微调板块高亮
+    const tuneLead = document.querySelector("#tune .lead");
+    if(tuneLead && n===4){
+      tuneLead.innerHTML = layer.classList.contains("on")
+        ? "🎯 LoRA 适配器已点亮：专属定制模型链路已激活（语义回响 + LoRA 微调）→ 预期 LLM-Judge 全面反超，5/5 全绿。"
+        : "面向下一阶段\u201c专属定制模型\u201d的完整 LoRA 微调链路：情感数据集构建 → LoRA 训练 → 热插拔部署 → 验证。";
+    }
+  });
+});
+
+/* 滚动高亮导航（scrollspy） */
+const navLinks = document.querySelectorAll("nav a.menu");
+const secs = ["bench","demo","arch","config","tune","run","roast"].map(id=>document.getElementById(id)).filter(Boolean);
+window.addEventListener("scroll", ()=>{
+  const pos = window.scrollY + 120;
+  let cur = "";
+  secs.forEach(s=>{ if(pos >= s.offsetTop) cur = s.id; });
+  navLinks.forEach(a=>{
+    a.style.color = a.getAttribute("href") === "#"+cur ? "var(--echo)" : "";
+  });
+},{passive:true});
 </script>
 </body>
 </html>

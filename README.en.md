@@ -135,13 +135,15 @@ Thanks for proving that **stacking parameters isn't the same as stacking humanit
 
 ### 💰 Commercial License Price List (Pay Before You Copy)
 
-Since you're going to copy it anyway, pay the licensing fee first. Tiered into **Big / Mid / Small** companies by annual revenue, headcount and scale. License is **one term (one year)**:
+Three license types: **Standard / Exclusive / Exclusive Buyout**, priced by company scale & license scope:
 
-| Tier | Criteria | Annual Fee |
+| License Type | Criteria | Fee |
 |---|---|---|
-| Big company | Annual revenue ≥ ¥10B, or ≥ 10,000 employees | **¥5,000,000** |
-| Mid company | Annual revenue ¥1B–10B | **¥2,000,000–5,000,000** |
-| Small company | Annual revenue < ¥1B | **¥100,000–500,000** |
+| Standard · Big | Annual revenue ≥ ¥10B, or ≥ 10,000 employees | **¥5,000,000+ / yr** |
+| Standard · Mid | Annual revenue ¥1B–10B | **¥2,000,000–5,000,000 / yr** |
+| Standard · Small | Annual revenue < ¥1B | **¥100,000–500,000 / yr** |
+| **Exclusive license** | Sole right during term; no other company may use it | **¥10,000,000 / yr** |
+| **Exclusive buyout** | One-time buyout of all technical assets & source | **¥80,000,000–1,000,000,000** (contact for details) |
 
 > Overseas big labs (@the ones above): I can't travel abroad and can hardly get an internship, so no licensing for you.
 > One-term (one-year) license only. No long-term bulk licensing.
@@ -152,6 +154,8 @@ Since you're going to copy it anyway, pay the licensing fee first. Tiered into *
 - 🏢 Mid companies → **¥1,000,000 off**
 - 🏬 Small companies → **¥100,000 off**
 
+> 🛡️ **Exclusive buyout requires**: a dedicated cluster, or an exclusive server with **8 GPUs (≥500GB VRAM total)**, for tech handover & ongoing deployment.
+> 📧 Buyout / exclusive license details: **DYPUBG2025@QQ.COM** (please include company name, size, intended use case and timeline).
 > Don't ask if we can negotiate. Git gud. Pay first.
 
 ---

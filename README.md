@@ -11,6 +11,9 @@
 
 ---
 
+> 🗣️ **不想看技术？** 点这里看 [【大白话版】语义回响是什么？（小白也能看懂）](https://github.com/091635Aa/SemanticEcho-Hub/blob/main/大白话版.md)
+> 🏛️ **综合大仓库（总入口）**：[SemanticEcho-Hub](https://github.com/091635Aa/SemanticEcho-Hub) —— 汇总全部子仓库 + 商业授权价目表
+
 ## 💡 这个项目是啥？
 
 **语义回响（Semantic Echo）**——一个让 AI 更像人的推理增强架构。

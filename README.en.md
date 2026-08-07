@@ -150,9 +150,14 @@ Three license types: **Standard / Exclusive / Exclusive Buyout**, priced by comp
 
 **Discounts** (eligibility based):
 
-- 🎓 Hire me for an internship at **Alibaba Cloud / Tencent Cloud / ByteDance / Huawei Cloud** → drop to **¥3,000,000 / yr** (¥2,000,000 off)
 - 🏢 Mid companies → **¥1,000,000 off**
 - 🏬 Small companies → **¥100,000 off**
+- ❌ Internship → **zero discount** (hiring me for an internship at Alibaba Cloud / Tencent Cloud / ByteDance / Huawei Cloud gives NO fee reduction)
+
+**💻 Hardware terms** (negotiable on top of the above; can be written into the contract):
+
+- Prefer: **dedicated physical servers** — one CPU server + one GPU server
+- Bonus: a **fully-loaded physical workstation delivered to my home** 🏠
 
 > 🛡️ **Exclusive buyout requires**: a dedicated cluster, or an exclusive server with **8 GPUs (≥500GB VRAM total)**, for tech handover & ongoing deployment.
 > 📧 Buyout / exclusive license details: **DYPUBG2025@QQ.COM** (please include company name, size, intended use case and timeline).

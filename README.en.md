@@ -184,11 +184,15 @@ Thanks for proving that **stacking parameters and money isn't the same as stacki
 
 ## License
 
-This repository is licensed under **CC BY-NC 4.0 + Additional Restrictions**.
+This repository is licensed under **CC BY-NC-SA 4.0 + Additional Restrictions** (ShareAlike 4.0):
 
-- ✅ Allowed: personal research, academic citation, non-commercial education
+**ShareAlike (SA)**: anyone who modifies/adapts this work and redistributes it must use the same license — no relicensing under other terms.
+
+- ✅ Allowed: learning & personal research, academic citation, reproduction/verification of experiments
+- ⚠️ Limited: code may be studied but not copied wholesale; academic research use only
 - ❌ Prohibited: any commercial use (including internal enterprise use)
-- ❌ Prohibited: integration into or dependency by any public/closed-source project
+- ❌ Prohibited: use in ANY project — private or public (even non-profit / at a loss)
+- ❌ Prohibited: redistribution unless clearly @ crediting the author, or under the AGPL-3.0 license
 
 See [LICENSE](./LICENSE) for details.
 For commercial licensing, contact the author.

@@ -156,8 +156,8 @@ Thanks for proving that **stacking parameters and money isn't the same as stacki
 |---|---|---|
 | **Perpetual non-exclusive license** | One-time payment, permanent use; author retains the right to license others | **¥15,000,000+** |
 | **Exclusive license (annual)** | Sole right nationwide/globally during the term; no other company may use it | **¥10,000,000 / yr** |
-| **Long-term exclusive license (10/20 yrs)** | Sole right during the agreed term | **¥20,000,000 / 10 yrs+** |
-| **Perpetual exclusive buyout** | One-time buyout of all technical assets & source; author retains no commercial licensing rights | **¥80,000,000+** (original range ¥80,000,000–1,000,000,000, negotiable) |
+| **Long-term exclusive license (8/10 yrs)** | Sole right during the agreed term | **¥50,000,000 / 8 yrs+** (scale-up: **¥80,000,000 / 10 yrs**) |
+| **Perpetual exclusive buyout** | One-time buyout of all technical assets & source; author retains no commercial licensing rights | **¥100,000,000 – ¥1,000,000,000** (negotiable upside only, not downside; floor ¥100,000,000) |
 
 > 😏 Overseas big labs (@openai @google @google-deepmind @anthropics @facebookresearch @meta-llama @xai): I can't travel abroad and can hardly get an internship, so no licensing for you.
 > One-term (one-year) license only. No long-term bulk licensing.

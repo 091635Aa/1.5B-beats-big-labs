@@ -122,7 +122,11 @@ python 测试/基准脚本/run_llm_judge.py --模式 全部 --λ 0.08 --身份 o
 
 ## 6. A (Mock) Thank-You to the Closed-Source Giants 🤣
 
-Thanks for proving that **stacking parameters isn't the same as stacking humanity.**
+Thanks for proving that **stacking parameters and money isn't the same as stacking humanity.**
+
+- **OpenAI**: Called "Open", but not open at all; absurdly expensive while less capable than our country's models — price propped up by the stock market.
+- **Google**: All that money, all those models, billions of dollars poured in, and emotional expressiveness still improves less than my 1.5B inference architecture.
+- **Anthropic / Meta / xAI / others**: Git gud. Or just copy this architecture home.
 
 - Google: BIG-bench is nice, but it never measured "human flavor" → https://github.com/google/BIG-bench
 - MIT: we read your 636-human TuringTest → https://github.com/kreimanlab/TuringTest
@@ -132,6 +136,9 @@ Thanks for proving that **stacking parameters isn't the same as stacking humanit
 
 > A 1.5B model can do this. Your trillion-parameter models can't?
 > Git gud. Or just copy this architecture home.
+> The problem isn't that you're not strong enough — it's that you don't know how to use what you have. Pick up the discarded token embeddings and even a 1.5B can speak like a human.
+
+> *📝 Test scope note: local inference is fully verified; cloud ultra-large-model inference has not yet been benchmarked (no cluster purchased yet) — any related gaps do NOT mean cloud models are unusable. Tested on 7B/30B-class small/mid models; full 700B+ models untested, but the generalization mechanism passes in theory.*
 
 ### 💰 Commercial License Price List (Pay Before You Copy)
 

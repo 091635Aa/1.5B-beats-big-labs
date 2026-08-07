@@ -135,15 +135,14 @@ Thanks for proving that **stacking parameters isn't the same as stacking humanit
 
 ### 💰 Commercial License Price List (Pay Before You Copy)
 
-Three license types: **Standard / Exclusive / Exclusive Buyout**, priced by company scale & license scope:
+Four license types, priced by license type & scope:
 
-| License Type | Criteria | Fee |
+| License Type | Description | Fee |
 |---|---|---|
-| Standard · Big | Annual revenue ≥ ¥10B, or ≥ 10,000 employees | **¥5,000,000+ / yr** |
-| Standard · Mid | Annual revenue ¥1B–10B | **¥2,000,000–5,000,000 / yr** |
-| Standard · Small | Annual revenue < ¥1B | **¥100,000–500,000 / yr** |
-| **Exclusive license** | Sole right during term; no other company may use it | **¥10,000,000 / yr** |
-| **Exclusive buyout** | One-time buyout of all technical assets & source | **¥80,000,000–1,000,000,000** (contact for details) |
+| **Standard annual license** | Renewed yearly; for short-term technical validation or staged projects | **¥5,000,000+ / yr** |
+| **Perpetual non-exclusive license** | One-time payment, permanent use; author retains the right to license others | **¥15,000,000+** |
+| **Long-term exclusive license (10/20 yrs)** | Sole right during the agreed term | **¥20,000,000 / 10 yrs+** |
+| **Perpetual exclusive buyout** | One-time buyout of all technical assets & source; author retains no commercial licensing rights | **¥80,000,000+** |
 
 > Overseas big labs (@the ones above): I can't travel abroad and can hardly get an internship, so no licensing for you.
 > One-term (one-year) license only. No long-term bulk licensing.
@@ -159,7 +158,7 @@ Three license types: **Standard / Exclusive / Exclusive Buyout**, priced by comp
 - Prefer: **dedicated physical servers** — one CPU server + one GPU server
 - Bonus: a **fully-loaded physical workstation delivered to my home** 🏠
 
-> 🛡️ **Exclusive buyout requires**: a dedicated cluster, or an exclusive server with **8 GPUs (≥500GB VRAM total)**, for tech handover & ongoing deployment.
+> 🛡️ **Perpetual exclusive buyout requires**: a dedicated cluster, or an exclusive server with **8 GPUs (≥500GB VRAM total)**, for tech handover & ongoing deployment.
 > 📧 Buyout / exclusive license details: **DYPUBG2025@QQ.COM** (please include company name, size, intended use case and timeline).
 > Don't ask if we can negotiate. Git gud. Pay first.
 

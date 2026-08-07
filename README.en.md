@@ -135,28 +135,39 @@ Thanks for proving that **stacking parameters isn't the same as stacking humanit
 
 ### 💰 Commercial License Price List (Pay Before You Copy)
 
-Four license types, priced by license type & scope:
+**1. Standard Annual License** (tiered by company scale; renewed yearly; for short-term technical validation or staged projects)
+
+| Tier | Criteria | Annual Fee |
+|---|---|---|
+| Big company | Annual revenue ≥ ¥10B, or ≥ 10,000 employees | **¥5,000,000+ / yr** |
+| Mid company | Annual revenue ¥1B–10B | **¥2,000,000–5,000,000 / yr** |
+| Small company | Annual revenue < ¥1B | **¥100,000–500,000 / yr** |
+
+**2. Perpetual & Exclusive Licenses** (by license type)
 
 | License Type | Description | Fee |
 |---|---|---|
-| **Standard annual license** | Renewed yearly; for short-term technical validation or staged projects | **¥5,000,000+ / yr** |
 | **Perpetual non-exclusive license** | One-time payment, permanent use; author retains the right to license others | **¥15,000,000+** |
+| **Exclusive license (annual)** | Sole right nationwide/globally during the term; no other company may use it | **¥10,000,000 / yr** |
 | **Long-term exclusive license (10/20 yrs)** | Sole right during the agreed term | **¥20,000,000 / 10 yrs+** |
-| **Perpetual exclusive buyout** | One-time buyout of all technical assets & source; author retains no commercial licensing rights | **¥80,000,000+** |
+| **Perpetual exclusive buyout** | One-time buyout of all technical assets & source; author retains no commercial licensing rights | **¥80,000,000+** (original range ¥80,000,000–1,000,000,000, negotiable) |
 
 > Overseas big labs (@the ones above): I can't travel abroad and can hardly get an internship, so no licensing for you.
 > One-term (one-year) license only. No long-term bulk licensing.
 
-**Discounts** (eligibility based):
+**3. Discounts** (eligibility based):
 
 - 🏢 Mid companies → **¥1,000,000 off**
 - 🏬 Small companies → **¥100,000 off**
 - ❌ Internship → **zero discount** (hiring me for an internship at Alibaba Cloud / Tencent Cloud / ByteDance / Huawei Cloud gives NO fee reduction)
 
-**💻 Hardware terms** (negotiable on top of the above; can be written into the contract):
+**4. Hardware & Gift Terms** (negotiable on top of the above; can be written into the contract):
 
-- Prefer: **dedicated physical servers** — one CPU server + one GPU server
+- Prefer: **dedicated physical servers** — one CPU server + one GPU server, or at least **one dedicated server**
 - Bonus: a **fully-loaded physical workstation delivered to my home** 🏠
+- Gifts: **limited-edition ES samples** (Semantic Echo merchandise) ＋ **Alibaba Cloud / Tencent Cloud exclusive merch** 🎁
+
+**5. Perpetual exclusive buyout requirements**:
 
 > 🛡️ **Perpetual exclusive buyout requires**: a dedicated cluster, or an exclusive server with **8 GPUs (≥500GB VRAM total)**, for tech handover & ongoing deployment.
 > 📧 Buyout / exclusive license details: **DYPUBG2025@QQ.COM** (please include company name, size, intended use case and timeline).

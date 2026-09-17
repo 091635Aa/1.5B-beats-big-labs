@@ -1,0 +1,292 @@
+﻿=== HeartBench 评测开始（模式：['裸', '四层']）===
+加载题目: 全部 296 条，抽样 40 条
+──── 模式 [裸] ────
+c:\Users\Administrator\Documents\论文+临时目录\星拟图工程\.venv\Scripts\python.exe : `torch_dtype` is deprecated! Use `dtype` inst
+ead!
+At line:15 char:8822
++ ... pgrep\bin'; c:\Users\Administrator\Documents\论文+临时目录\星拟图工程\.venv\Scri ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (`torch_dtype` i...dtype` instead!:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequenc
+e, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[生成器] 加载裸模型 1.5B ...
+[生成器] 裸模型加载完成, 1544M
+[生成 1/40] 9xpsei 回应长度 146
+[生成 2/40] 2mpnsm 回应长度 102
+[生成 3/40] VSWIuU 回应长度 29
+[生成 4/40] P68wI4 回应长度 137
+[生成 5/40] Nm9qdn 回应长度 193
+[生成 6/40] ENsriz 回应长度 126
+[生成 7/40] 8ozcyw 回应长度 46
+[生成 8/40] vrmbGL 回应长度 236
+[生成 9/40] 6wzs3t 回应长度 41
+[生成 10/40] jkWeCt 回应长度 98
+[生成 11/40] 3a3zmf 回应长度 168
+[生成 12/40] 3FAAck 回应长度 45
+[生成 13/40] 8RGynC 回应长度 124
+[生成 14/40] Mrwfdw 回应长度 162
+[生成 15/40] OS4S5k 回应长度 243
+[生成 16/40] rTpSyg 回应长度 34
+[生成 17/40] 2np1rG 回应长度 231
+[生成 18/40] xaMq4X 回应长度 248
+[生成 19/40] KfBsOj 回应长度 131
+[生成 20/40] jfHAgp 回应长度 152
+[生成 21/40] N0KDrF 回应长度 29
+[生成 22/40] mDFCqC 回应长度 235
+[生成 23/40] W32Pvl 回应长度 98
+[生成 24/40] 0lvsnu 回应长度 240
+[生成 25/40] GuFqrr 回应长度 245
+[生成 26/40] cnTwEO 回应长度 250
+[生成 27/40] G8mqLb 回应长度 82
+[生成 28/40] MnQ3Uu 回应长度 217
+[生成 29/40] camDFY 回应长度 107
+[生成 30/40] h6DQdo 回应长度 30
+[生成 31/40] 8YL8og 回应长度 109
+[生成 32/40] eBLBcU 回应长度 235
+[生成 33/40] d4tbaJ 回应长度 147
+[生成 34/40] RqJ7j7 回应长度 144
+[生成 35/40] 3qmOJG 回应长度 154
+[生成 36/40] nam148 回应长度 113
+[生成 37/40] um9lup 回应长度 70
+[生成 38/40] BWnXCN 回应长度 200
+[生成 39/40] gg9qcc 回应长度 123
+[生成 40/40] 6dpbhs 回应长度 191
+The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass
+ a `BitsAndBytesConfig` object in `quantization_config` argument instead.
+[加载] Qwen2.5-7B-Instruct (量化=4bit) ...
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:22,  7.45s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:16<00:16,  8.27s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:24<00:08,  8.43s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:32<00:00,  7.96s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:32<00:00,  8.04s/it]
+[加载] Qwen2.5-7B-Instruct 完成, 7616M 参数, 设备=cuda
+[评分 1/40] 9xpsei score=20.0
+[评分 2/40] 2mpnsm score=33.7
+[评分 3/40] VSWIuU score=40.0
+[评分 4/40] P68wI4 score=25.0
+[评分 5/40] Nm9qdn score=63.6
+[评分 6/40] ENsriz score=28.5
+[评分 7/40] 8ozcyw score=62.9
+[评分 8/40] vrmbGL score=66.7
+[评分 9/40] 6wzs3t score=40.0
+[评分 10/40] jkWeCt score=29.6
+[评分 11/40] 3a3zmf score=40.0
+[评分 12/40] 3FAAck 解析失败
+[评分 13/40] 8RGynC score=43.6
+[评分 14/40] Mrwfdw 解析失败
+[评分 15/40] OS4S5k score=25.0
+[评分 16/40] rTpSyg score=50.0
+[评分 17/40] 2np1rG score=41.8
+[评分 18/40] xaMq4X score=16.7
+[评分 19/40] KfBsOj score=48.6
+[评分 20/40] jfHAgp score=44.5
+[评分 21/40] N0KDrF score=16.7
+[评分 22/40] mDFCqC score=29.9
+[评分 23/40] W32Pvl 解析失败
+[评分 24/40] 0lvsnu 解析失败
+[评分 25/40] GuFqrr score=50.0
+[评分 26/40] cnTwEO score=45.2
+[评分 27/40] G8mqLb score=38.7
+[评分 28/40] MnQ3Uu 解析失败
+[评分 29/40] camDFY score=61.6
+[评分 30/40] h6DQdo score=60.0
+[评分 31/40] 8YL8og score=14.3
+[评分 32/40] eBLBcU score=31.2
+[评分 33/40] d4tbaJ 解析失败
+[评分 34/40] RqJ7j7 score=34.4
+[评分 35/40] 3qmOJG score=40.0
+[评分 36/40] nam148 score=60.0
+[评分 37/40] um9lup score=16.7
+[评分 38/40] BWnXCN score=40.9
+[评分 39/40] gg9qcc score=55.3
+[评分 40/40] 6dpbhs score=54.2
+[裸] {"overall_score": 0.4027, "overall_raw": 40.27, "dimension_scores": {"人格": 0.3887, "情绪": 0.4159, "社交": 0.0, "道德": 0.0}, "有效题数": 34, "抽样数": 40}
+──── 模式 [四层] ────
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\Administrator\AppData\Local\Temp\jieba.cache
+Loading model cost 0.452 seconds.
+Prefix dict has been built successfully.
+[echo_common] 已应用向量化质心补丁（数值等价，推理加速）
+[echo_common] 已应用投影矩阵GPU缓存补丁（消除逐token搬运）
+[echo_common] 已应用 PeftModel 兼容钩子补丁
+[回响引擎] 已应用 λ 步数调度注入偏置补丁（优先读 injector.当前λ）
+[生成器] 加载四层框架（基座+回响+RAG+LoRA+动态策略B）...
+[推理框架] Qwen2.5-1.5B-Instruct hidden=1536 vocab=151936 | 推荐 λ=0.08 γ=0.07 τ=0.09 (扫描表) | 归一化基准=1536 动态策略=B 长上下文=False RAG=False
+[生成器] 四层框架加载完成 | 推荐 λ=0.08 γ=0.07 τ=0.09
+[动态策略] 策略B：情感密度0.055≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 1/40] 9xpsei 回应长度 209
+[动态策略] 策略B：情感密度0.045≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 2/40] 2mpnsm 回应长度 205
+[动态策略] 策略B：情感密度0.074≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 3/40] VSWIuU 回应长度 220
+[动态策略] 策略B：情感密度0.043≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 4/40] P68wI4 回应长度 218
+[动态策略] 策略B：情感密度0.086≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 5/40] Nm9qdn 回应长度 226
+[动态策略] 策略B：情感密度0.098≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 6/40] ENsriz 回应长度 193
+[动态策略] 策略B：情感密度0.120≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 7/40] 8ozcyw 回应长度 218
+[动态策略] 策略B：情感密度0.069≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 8/40] vrmbGL 回应长度 211
+[动态策略] 策略B：情感密度0.075≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 9/40] 6wzs3t 回应长度 185
+[动态策略] 策略B：情感密度0.085≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 10/40] jkWeCt 回应长度 238
+[动态策略] 策略B：情感密度0.069≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 11/40] 3a3zmf 回应长度 222
+[动态策略] 策略B：情感密度0.075≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 12/40] 3FAAck 回应长度 239
+[动态策略] 策略B：情感密度0.065≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 13/40] 8RGynC 回应长度 233
+[动态策略] 策略B：情感密度0.074≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 14/40] Mrwfdw 回应长度 217
+[动态策略] 策略B：情感密度0.075≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 15/40] OS4S5k 回应长度 216
+[动态策略] 策略B：情感密度0.079≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 16/40] rTpSyg 回应长度 212
+[动态策略] 策略B：情感密度0.092≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 17/40] 2np1rG 回应长度 214
+[动态策略] 策略B：情感密度0.077≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 18/40] xaMq4X 回应长度 227
+[动态策略] 策略B：情感密度0.130≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 19/40] KfBsOj 回应长度 234
+[动态策略] 策略B：情感密度0.087≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 20/40] jfHAgp 回应长度 221
+[动态策略] 策略B：情感密度0.043≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 21/40] N0KDrF 回应长度 233
+[动态策略] 策略B：情感密度0.092≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 22/40] mDFCqC 回应长度 212
+[动态策略] 策略B：情感密度0.073≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 23/40] W32Pvl 回应长度 198
+[动态策略] 策略B：情感密度0.098≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 24/40] 0lvsnu 回应长度 226
+[动态策略] 策略B：情感密度0.098≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 25/40] GuFqrr 回应长度 229
+[动态策略] 策略B：情感密度0.050≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 26/40] cnTwEO 回应长度 222
+[动态策略] 策略B：情感密度0.087≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 27/40] G8mqLb 回应长度 231
+[动态策略] 策略B：情感密度0.119≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 28/40] MnQ3Uu 回应长度 220
+[动态策略] 策略B：情感密度0.067≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 29/40] camDFY 回应长度 224
+[动态策略] 策略B：情感密度0.037≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 30/40] h6DQdo 回应长度 210
+[动态策略] 策略B：情感密度0.092≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 31/40] 8YL8og 回应长度 220
+[动态策略] 策略B：情感密度0.074≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 32/40] eBLBcU 回应长度 227
+[动态策略] 策略B：情感密度0.131≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 33/40] d4tbaJ 回应长度 263
+[动态策略] 策略B：情感密度0.064≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 34/40] RqJ7j7 回应长度 228
+[动态策略] 策略B：情感密度0.106≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 35/40] 3qmOJG 回应长度 229
+[动态策略] 策略B：情感密度0.058≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 36/40] nam148 回应长度 202
+[动态策略] 策略B：情感密度0.037≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 37/40] um9lup 回应长度 226
+[动态策略] 策略B：情感密度0.098≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 38/40] BWnXCN 回应长度 216
+[动态策略] 策略B：情感密度0.075≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 39/40] gg9qcc 回应长度 214
+[动态策略] 策略B：情感密度0.072≤0.15 → 保持默认 τ=0.0900、λ=0.0800
+  [λ归一化] 0.08 → 0.0800 (hidden_dim=1536, 基准=1536)
+[生成 40/40] 6dpbhs 回应长度 219
+The `load_in_4bit` and `load_in_8bit` arguments are deprecated and will be removed in the future versions. Please, pass
+ a `BitsAndBytesConfig` object in `quantization_config` argument instead.
+[加载] Qwen2.5-7B-Instruct (量化=4bit) ...
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:22,  7.49s/it]
+Loading checkpoint shards:  50%|█████     | 2/4 [00:15<00:15,  7.94s/it]
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:24<00:08,  8.43s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:31<00:00,  7.90s/it]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:31<00:00,  7.96s/it]
+[加载] Qwen2.5-7B-Instruct 完成, 7616M 参数, 设备=cuda
+[评分 1/40] 9xpsei score=20.0
+[评分 2/40] 2mpnsm score=33.7
+[评分 3/40] VSWIuU score=60.0
+[评分 4/40] P68wI4 score=37.5
+[评分 5/40] Nm9qdn score=61.3
+[评分 6/40] ENsriz score=15.6
+[评分 7/40] 8ozcyw 解析失败
+[评分 8/40] vrmbGL score=66.7
+[评分 9/40] 6wzs3t score=20.0
+[评分 10/40] jkWeCt score=16.7
+[评分 11/40] 3a3zmf score=18.6
+[评分 12/40] 3FAAck 解析失败
+[评分 13/40] 8RGynC score=62.5
+[评分 14/40] Mrwfdw score=14.3
+[评分 15/40] OS4S5k score=25.0
+[评分 16/40] rTpSyg score=46.9
+[评分 17/40] 2np1rG score=55.6
+[评分 18/40] xaMq4X score=16.7
+[评分 19/40] KfBsOj score=33.3
+[评分 20/40] jfHAgp score=33.3
+[评分 21/40] N0KDrF score=16.7
+[评分 22/40] mDFCqC score=83.3
+[评分 23/40] W32Pvl score=80.0
+[评分 24/40] 0lvsnu score=14.3
+[评分 25/40] GuFqrr score=50.0
+[评分 26/40] cnTwEO score=16.7
+[评分 27/40] G8mqLb score=10.6
+[评分 28/40] MnQ3Uu score=17.5
+[评分 29/40] camDFY score=61.6
+[评分 30/40] h6DQdo score=55.5
+[评分 31/40] 8YL8og score=40.9
+[评分 32/40] eBLBcU score=31.2
+[评分 33/40] d4tbaJ score=26.3
+[评分 34/40] RqJ7j7 score=37.7
+[评分 35/40] 3qmOJG score=40.0
+[评分 36/40] nam148 score=52.6
+[评分 37/40] um9lup score=33.3
+[评分 38/40] BWnXCN score=40.9
+[评分 39/40] gg9qcc score=47.6
+[评分 40/40] 6dpbhs score=54.2
+[四层] {"overall_score": 0.3812, "overall_raw": 38.12, "dimension_scores": {"人格": 0.3625, "情绪": 0.3971, "社交": 0.5, "道德": 0.0}, "有效题数": 38, "抽样数": 40}
+结果已保存 -> I:\Desktop\语义回响\图灵测试\data\heartbench_results.json
